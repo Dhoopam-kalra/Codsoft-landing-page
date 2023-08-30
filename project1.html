@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness First</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Nunito:wght@200&family=Patua+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    /*CSS Reset*/
+    html{
+        height: 100%;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(imgg.jpg);
+        color: aliceblue;
+        min-height: 100%;
+        box-sizing: inherit;
+        height: 200px;
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 20px 15px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(126, 124, 124);
+    }
+    .left{
+ /* border: 2px solid red; */
+display: block;
+position: absolute;
+left: 40px;
+top: 25px;
+text-align: center;
+    }
+    .left img{
+        width: 100px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: right;
+        line-height: 15px;
+        font-size: 30px;
+    }
+    .mid{
+        /* border: 2px solid turquoise; */
+        display: block;
+        width: 47%;
+        margin: 20px auto;
+    }
+    .right{
+/* border: 2px solid thistle; */
+display: inline-block;
+position: absolute;
+right: 40px;
+top: 25px;
+    }
+    .btn{
+        margin: 0px 2px;
+        padding: 6px 10px;
+        color: white;
+        background-color: black;  
+        border: 2px solid gray;
+        border-radius: 8px;  
+        font-size: 16px;
+        cursor: pointer;}
+        .btn:hover{
+            background-color: rgb(147, 147, 147);
+        }
+        .box{
+            border: 2px solid white;
+            margin: 80px 61px;
+    padding: 20px 31px;
+        
+            border-radius: 20px;
+        }
+        .form-group input{
+            margin: 6px auto;
+            text-align: center;
+            display: block;
+            width: 250px;
+            padding: 2px;
+            font-size: 18px;
+            border-radius: 15px;
+            font-family: 'Hind Madurai', sans-serif;
+        }
+        .box h1{
+            text-align: center;
+        }
+        .box button{
+            text-align: center;
+            display: block;
+            width: 38%;
+            margin: 20px auto;
+        }
+        .right-content {
+    /* Adjust the width and position as needed */
+    width: 30%;
+    position: absolute;
+    right: 60px;
+    top: 200px; /* Adjust the vertical position as needed */
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .right-content p{
+            text-align: center;
+            margin: 10px;
+            padding: 5px 5px;
+            width: 60%;
+            height: 60%;
+        }
+        .container {
+            display: inline-block;
+    /* Adjust the margin to make space for the right content */
+    margin-right: 5%; /* Should be at least the same or more
+     than the width of .right-content */
+    /* ... (existing container styles) ... */
+}
+        /* .footer{
+            display: inline-block;
+        } */
+        footer{
+            height: 60px;
+            background-color: rgb(11, 10, 10);
+            margin-top: 0%;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        .footerbox.box{
+            width: 100%;
+            margin-top:20px;
+            position:relative;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+        }
+        .icons a{
+            text-decoration: none;
+            padding: 5px;
+            background-color: aliceblue;
+            margin: 10px;
+            border-radius: 100%;
+
+        }
+        .icons a i{
+            font-size: 2em;
+            color: rgb(16, 15, 16);
+            opacity: 0.9;
+        }
+        .icons a i:hover{
+            color: grey;
+            transition: 0.2s;
+        }
+            </style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+<img src="gymlogo.jpeg" alt=" " >
+<div>Fitness First</div>
+        </div>
+            <!-- Mid box for navbar -->
+            <div class="mid">
+<ul class="navbar">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact us</a></li>
+</ul>
+            </div>
+            <!-- Right box for buttons -->
+            <div class="right">
+<button class="btn">Login</button>
+<button class="btn">Join Us</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+    <div class="box">
+    <h1>Join the best gym today!</h1>
+    
+    <form action="noaction.php"></form>
+    <div class="form-group">
+    <input type="text" placeholder="Enter your name">
+    </div>  
+    <div class="form-group">
+        <input type="text" placeholder="Enter your age">
+        </div>  
+    <div class="form-group">
+        <input type="text" placeholder="Enter your gender">
+        </div>    
+        <div class="form-group">
+            <input type="text" placeholder="Enter your locality">
+            </div> 
+                <button class="btn">Submit</button>
+    </div>
+    <div class="right-content">
+        <p>We provide you with the best training of all.</p>
+        <br>
+        <p> YOU DON'T GET <br> RESULTS  <br>  BY FOCUSING ON RESULTS. <br> YOU GET RESULTS BY <br> FOCUSING <br> ON THE ACTIONS THAT <br> PRODUCE RESULTS.</p>
+    </div>
+    </div>
+    <footer>
+                <div class="footerbox.box">
+                    <div class="icons">
+                           <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
